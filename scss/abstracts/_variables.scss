@@ -1,0 +1,44 @@
+
+// Layout
+
+$bp-tablet: 768px;
+$bp-desktop: 1440px;
+
+// Colors
+
+$blue: hsl(246, 80%, 60%);
+$orange: hsl(15, 100%, 70%);
+$soft-blue: hsl(195, 74%, 62%);
+$light-red: hsl(348, 100%, 68%);
+$lime-green: hsl(145, 58%, 55%);
+$violet: hsl(264, 64%, 52%);
+$soft-orange: hsl(43, 84%, 65%);
+
+$very-dark-blue: hsl(226, 43%, 10%);
+$dark-blue: hsl(235, 46%, 20%);
+$desaturated-blue: hsl(235, 45%, 61%);
+$pale-blue: hsl(236, 100%, 87%);
+
+$white: hsl(0, 100%, 100%);
+
+// Typography
+
+$fs-body: 1rem;
+$fs-headings-sm: 1.125rem;
+$fs-headings-lg: 1.5rem;
+$fs-headings-xl: 2rem;
+$fs-headings-xxl: 3.625rem;
+
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+
+// Sizing
+
+$sz-xs: 0.625rem;
+$sz-sm: 1.625rem;
+$sz-md: 1.75rem;
+$sz-lg: 2.5rem;
+$sz-xl: 5rem;
+
+$bd-radius: 0.875rem;

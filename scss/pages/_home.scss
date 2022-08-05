@@ -1,0 +1,201 @@
+body {
+    background-color: $very-dark-blue;
+}
+
+.container {
+    display: grid;
+    gap: $sz-sm;
+    grid-template-areas:
+        'header'
+        'work'
+        'play'
+        'study'
+        'exercise'
+        'social'
+        'self-care'
+    ;
+    margin: $sz-xl $sz-sm;
+
+    section {
+        background-repeat: no-repeat;
+        background-position: calc(100% - $sz-sm + $sz-xs) -0.625rem;
+        border-radius: $bd-radius;
+
+        > * {
+            border-radius: $bd-radius;
+            padding: $sz-md $sz-sm;
+        }
+    }
+}
+
+.container section:not(.header) {
+    > * {
+        background-color: $dark-blue;
+        display: grid;
+        gap: $sz-xs;
+        margin-top: $sz-lg;
+
+        header, main {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        button {
+            display: flex;
+
+            svg {
+                fill: $pale-blue;
+            }
+
+            &:hover {
+                cursor: pointer;
+
+                svg {
+                    fill: $white;
+                }
+            }
+        }
+    }
+
+    &:hover > * {
+        background-color: rgb($dark-blue, 0.95);
+    }
+}
+
+.container > {
+    .header {
+        grid-area: header;
+        background-color: $dark-blue;
+    
+        header {
+            background-color: $blue;
+            display: grid;
+            grid-auto-rows: min-content;
+            grid-template-areas: 'image text';
+            justify-content: space-between;
+    
+            img {
+                border: 3px solid $white;
+                border-radius: 50%;
+                height: 100%;
+            }
+
+            img + * {
+                display: grid;
+                gap: $sz-xs;
+                padding-block: $fs-body;
+            }
+        }
+    
+        ul {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    
+    .work {
+        background-color: $orange;
+        background-image: url('/images/icon-work.svg');
+        grid-area: work;
+    }
+    
+    .play {
+        background-color: $soft-blue;
+        background-image: url('/images/icon-play.svg');
+        grid-area: play;
+    }
+    
+    .study {
+        background-color: $light-red;
+        background-image: url('/images/icon-study.svg');
+        grid-area: study;
+    }
+    
+    .exercise {
+        background-color: $lime-green;
+        background-image: url('/images/icon-exercise.svg');
+        grid-area: exercise;
+    }
+    
+    .social {
+        background-color: $violet;
+        background-image: url('/images/icon-social.svg');
+        grid-area: social;
+    }
+    
+    .self-care {
+        background-color: $soft-orange;
+        background-image: url('/images/icon-self-care.svg');
+        grid-area: self-care;
+    }
+}
+
+@media screen and (min-width: $bp-tablet) {
+    .container {
+        grid-auto-columns: calc($bp-tablet - $sz-sm * 2);
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: $bp-desktop) {
+    body {
+        align-items: center;
+        display: flex;
+        min-height: 100vh;
+        justify-content: center;
+    }
+
+    .container {
+        gap: $sz-md;
+        grid-auto-columns: 17rem;
+        grid-auto-rows: max-content;
+        grid-template-areas:
+            'header work play study'
+            'header exercise social self-care'
+        ;
+
+        section > * {
+            padding: $sz-lg $sz-sm + $sz-xs;
+        }
+
+        section:not(.header) > * {
+            gap: $sz-sm + $sz-xs;
+
+            main {
+                align-items: start;
+                flex-direction: column;
+                gap: $sz-xs + $sz-xs;
+            }
+        }
+
+        .header > {
+            header {
+                grid-auto-rows: auto;
+                grid-template-areas:
+                    'image'
+                    'text'
+                ;
+
+                img {
+                    height: unset;
+                    width: 40%;
+
+                    & + * {
+                        gap: 0;
+                    }
+                }
+            }
+
+            ul {
+                flex-direction: column;
+                gap: $sz-md;
+            }
+        }
+    }
+
+    .header {
+        display: grid;
+        grid-auto-rows: auto min-content;
+    }
+}
