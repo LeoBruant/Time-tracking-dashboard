@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABO1BMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////l9Pff8fS54ein2eOn2eL9/v684unr9vj7/f7c8PSl2eKHzNil2OLv+Prz+vue1eB3xdOq2uPm9Pf29/vy8/n3/Py13+eEyteZ097P6u/2+/zByeKOm8r8/f7u+Pq+4+qOz9uU0dzo9fjb4O5meLbh5fH0+vvV7fHx+fv8/P2Gk8Wbps+44eim2eLW2+xkdrXO1Oit3OWttthperja3u7u+Pn6+/2hrNJneLfFy+P7+/23v92IlcbN0ufx8/nj5/Kbp9BsfbltfrqAj8ORnsvg5PD+/v/v8ffQ1em0vduqtNfn6vS/61TcAAAAHHRSTlMAAAQqbK3Z8v0DN5ff+xqJ6jbC/kHBAjjp3qz8qSKHsgAAAAFiS0dEAf8CLd4AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfiChMPAx5FOtlkAAABSUlEQVQ4y4WTZ2OCMBCGc4IMEXAPjB10771t7dLuXbv3/v+/oNigIYjN+4HcJU9CcgMhVxASxLAkK4oshUUhBIgVqBEtqmNXelSLqF4EwDBjmFHMNADoejyRxD4lE/EGAZCScICkFCGc/YHrDkHOACON2yhtOABkTNxWZgYQZHPeqWKH18tlAakas6ezi3E1FQl5Fuhm3LyARD0AsIs9vSSmIrJwC9DXPzA4NEx8C0ktwMjo2PiE3YgFkokxOdUEpmdm5+YXXEBGCjEWl5bpHVZKq2tlMq+gAjHWNza9r9jarpD5QuMX1Z3dv3Fvn72T3LzkweFRfSgd+xJGn3lyeuZ8K+csYNFAXVzWrqr+bDmBoqG+vqnd3t3bDOCE2push8en55fXNzZZTLrfPz6/vn+oX083t2C4JccvWm7Z8xuH33r85v2v/X8Bp/FiyVLnL/0AAAAldEVYdGRhdGU6Y3JlYXRlADIwMTgtMTAtMTlUMTU6MDM6MzArMDI6MDCzEaEaAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE4LTEwLTE5VDE1OjAzOjMwKzAyOjAwwkwZpgAAAFd6VFh0UmF3IHByb2ZpbGUgdHlwZSBpcHRjAAB4nOPyDAhxVigoyk/LzEnlUgADIwsuYwsTIxNLkxQDEyBEgDTDZAMjs1Qgy9jUyMTMxBzEB8uASKBKLgDqFxF08kI1lQAAAABJRU5ErkJggg==" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Time tracking dashboard</title>
+  
+  <link rel="stylesheet" href="assets/index.bd63d192.css">
+</head>
+
+<body>
+  <div class="container">
+    <section class="header">
+      <header>
+        <img src="assets/image-jeremy.97a6932a.png" alt="profile picture">
+        <div>
+          <h1>Report for</h1>
+          <h2>jeremy robson</h2>
+        </div>
+      </header>
+      <ul id="timeframes">
+        <li id="daily" onclick="changeTimeframe('daily')">daily</li>
+        <li id="weekly" onclick="changeTimeframe('weekly')">weekly</li>
+        <li id="monthly" onclick="changeTimeframe('monthly')">monthly</li>
+      </ul>
+    </section>
+    <section class="work">
+      <div>
+        <header>
+          <h2>work</h2>
+          <button>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill-rule="evenodd" />
+            </svg>
+          </button>
+        </header>
+        <main>
+          <h3></h3>
+          <p></p>
+        </main>
+      </div>
+    </section>
+    <section class="play">
+      <div>
+        <header>
+          <h2>play</h2>
+          <button>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill-rule="evenodd" />
+            </svg>
+          </button>
+        </header>
+        <main>
+          <h3></h3>
+          <p></p>
+        </main>
+      </div>
+    </section>
+    <section class="study">
+      <div>
+        <header>
+          <h2>study</h2>
+          <button>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill-rule="evenodd" />
+            </svg>
+          </button>
+        </header>
+        <main>
+          <h3></h3>
+          <p></p>
+        </main>
+      </div>
+    </section>
+    <section class="exercise">
+      <div>
+        <header>
+          <h2>exercice</h2>
+          <button>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill-rule="evenodd" />
+            </svg>
+          </button>
+        </header>
+        <main>
+          <h3></h3>
+          <p></p>
+        </main>
+      </div>
+    </section>
+    <section class="social">
+      <div>
+        <header>
+          <h2>social</h2>
+          <button>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill-rule="evenodd" />
+            </svg>
+          </button>
+        </header>
+        <main>
+          <h3></h3>
+          <p></p>
+        </main>
+      </div>
+    </section>
+    <section class="self-care">
+      <div>
+        <header>
+          <h2>self care</h2>
+          <button>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill-rule="evenodd" />
+            </svg>
+          </button>
+        </header>
+        <main>
+          <h3></h3>
+          <p></p>
+        </main>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
+
+<script>
+  const data = [
+    {
+      "title": "Work",
+      "timeframes": {
+        "daily": {
+          "current": 5,
+          "previous": 7
+        },
+        "weekly": {
+          "current": 32,
+          "previous": 36
+        },
+        "monthly": {
+          "current": 103,
+          "previous": 128
+        }
+      }
+    },
+    {
+      "title": "Play",
+      "timeframes": {
+        "daily": {
+          "current": 1,
+          "previous": 2
+        },
+        "weekly": {
+          "current": 10,
+          "previous": 8
+        },
+        "monthly": {
+          "current": 23,
+          "previous": 29
+        }
+      }
+    },
+    {
+      "title": "Study",
+      "timeframes": {
+        "daily": {
+          "current": 0,
+          "previous": 1
+        },
+        "weekly": {
+          "current": 4,
+          "previous": 7
+        },
+        "monthly": {
+          "current": 13,
+          "previous": 19
+        }
+      }
+    },
+    {
+      "title": "Exercise",
+      "timeframes": {
+        "daily": {
+          "current": 1,
+          "previous": 1
+        },
+        "weekly": {
+          "current": 4,
+          "previous": 5
+        },
+        "monthly": {
+          "current": 11,
+          "previous": 18
+        }
+      }
+    },
+    {
+      "title": "Social",
+      "timeframes": {
+        "daily": {
+          "current": 1,
+          "previous": 3
+        },
+        "weekly": {
+          "current": 5,
+          "previous": 10
+        },
+        "monthly": {
+          "current": 21,
+          "previous": 23
+        }
+      }
+    },
+    {
+      "title": "Self Care",
+      "timeframes": {
+        "daily": {
+          "current": 0,
+          "previous": 1
+        },
+        "weekly": {
+          "current": 2,
+          "previous": 2
+        },
+        "monthly": {
+          "current": 7,
+          "previous": 11
+        }
+      }
+    }
+  ]
+
+  let timeframe = 'weekly'
+
+  const timeframesLast = {
+    daily: 'yesterday',
+    weekly: 'last week',
+    monthly: 'last month'
+  }
+
+  // Methods
+
+  const changeTimeframe = (newTimeframe) => {
+    const timeframes = document.getElementById('timeframes').children
+
+    for (const key in timeframes) {
+      if (key < timeframes.length) {
+        timeframes[key].classList.remove('active')
+      }
+    }
+    
+    timeframe = newTimeframe
+
+    fillData()
+    
+    document.getElementById(newTimeframe).classList.add('active')
+  }
+
+  const fillData = () => {
+    data.map(({ title, timeframes }) => {
+      let sectionSelctor = `.${title.toLowerCase().replace(' ', '-')}`
+    
+      document.querySelector(`${sectionSelctor} main > h3`).innerText = `${timeframes[timeframe].current}hrs`
+      document.querySelector(`${sectionSelctor} main > p`).innerText = `${timeframesLast[timeframe]} - ${timeframes[timeframe].previous}hrs`
+    })
+  }
+
+  // Main
+  
+  fillData()
+  document.getElementById(timeframe).classList.add('active')
+</script>
